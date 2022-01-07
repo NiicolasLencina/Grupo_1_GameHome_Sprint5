@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <%- include('../partials/head')%> 
+
+<body>
+
+    <%- include('../partials/header')%> 
+
+   <main>
+
+   <!--FORMULARIO DE REGISTRO-->
+    <div class="container">
+        <div class="login-container">
+            
+
+        
+            <div class="login">
+                <h2>Iniciar con redes</h2>
+                <div class="login-items">
+
+                    <button class="gg"><i class="fab fa-google"></i> Iniciar con Google</button>
+
+                    <button class="fb"><i class="fab fa-facebook-f"></i> Iniciar con Facebook</button>
+
+                    <button class="tw"><i class="fab fa-twitter"></i> Iniciar con Twitter</button>
+
+                    <button class="ig"><i class="fas fa-camera"></i> Iniciar con Instagram</button>
+
+                </div>
+
+            </div>
+            <div class="register">
+                <h2>Iniciar sesión</h2>
+                <form action="POST" id="form">
+                    <input type="text" name="nombre" class="nombre" placeholder="Nombre de usuario o correo" required>
+
+                    
+
+                    <input type="password" name="contraseña" class="contraseña" placeholder="Contraseña" required>
+
+                    
+
+
+                    <input type="submit" class="submit" value="INICIAR SESION">
+
+
+
+                    <p class="link"><a href="/">¿Olvidaste la contraseña?</a></p><br>
+                    <div class="registrate"><p class="link">¿No tienes cuenta? <a href="/usuario/registro">¡Registrate!</a></p></div>
+
+                </form>    
+            </div>
+
+        </div>
+    </div>
+
+
+
+   </main>
+
+   <%- include('../partials/footer')%>
+
+</body>
+</html>

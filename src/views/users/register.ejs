@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+
+
+    <%- include('../partials/head')%>  
+
+<body>
+    <%- include('../partials/header')%> 
+    <main>
+         <!--FORMULARIO DE REGISTRO-->
+    <div class="container">
+        <div class="register-container">
+            
+            <div class="register">
+                <h2>Registrarse</h2>
+                
+                <form action="/usuario/registro" method="POST" id="form">
+
+
+                    <input type="text" name="firstName" class="nombre" placeholder="Nombre" required>
+
+                    <input type="text" name="lastName" class="nombre" placeholder="Apellido" required>
+
+                    <input type="email" name="email" class="correo" placeholder="Correo electrónico" required>
+
+                    <input type="date" id="start" name="date" value="2020-12-12"min="1995-01-01" max="2030-12-12" required>
+
+                    <input type="password" name="password" class="contraseña" placeholder="Contraseña" required>
+
+                    
+
+
+               
+                    <button class="submit" type="submit" >REGISTRARSE</button> <br>
+                    
+
+                    <div class="iniciar-sesion"><p class="link">¿Ya tienes cuenta? <a href="/usuario/login">Iniciar sesión</a></p></div>
+
+                </form>    
+            </div>
+          
+            <div class="registerRedes">
+                <h2>Registro con redes</h2>
+                <div class="login-items" >
+
+                    <button class="gg"><i class="fab fa-google"></i> Registrarse con Google</button>
+
+                    <button class="fb"><i class="fab fa-facebook-f"></i> Registrarse con Facebook</button>
+
+                    <button class="tw"><i class="fab fa-twitter"></i> Registrarse con Twitter</button>
+
+                    <button class="ig"><i class="fas fa-camera"></i> Registrarse con Instagram</button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    </main>
+
+    <%- include('../partials/footer')%>
+
+</body>
+
+</html>
