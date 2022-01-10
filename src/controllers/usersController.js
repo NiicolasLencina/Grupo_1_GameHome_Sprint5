@@ -15,6 +15,7 @@ const usersController = {
 
         row.password = bcryptjs.hashSync(req.body.password,10)
 
+        console.log(req.file);
 
         if(req.file){
             row.image = req.file.filename

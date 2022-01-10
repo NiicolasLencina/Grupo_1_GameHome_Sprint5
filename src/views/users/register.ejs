@@ -16,7 +16,8 @@
             <div class="register">
                 <h2>Registrarse</h2>
                 
-                <form action="/usuario/registro" method="POST" id="form">
+                <form action="/usuario/registro" method="POST" id="form"
+                    enctype="multipart/form-data">
 
 
                     <input type="text" name="firstName" class="nombre" placeholder="Nombre" required>
@@ -28,6 +29,8 @@
                     <input type="date" id="start" name="date" value="2020-12-12"min="1995-01-01" max="2030-12-12" required>
 
                     <input type="password" name="password" class="contraseña" placeholder="Contraseña" required>
+
+                    <input type="file" name="avatar" class="nombre" placeholder="Nombre">
 
                     
 
