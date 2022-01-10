@@ -16,7 +16,7 @@ const usersRutas= require('./src/routes/usersRutas')
 const productRutas= require('./src/routes/productRutas')
 
 // Pasar poder usar los métodos PUT y DELETE
-const methodOverride =  require('method-override'); 
+const methodOverride =  require('method-override');  
 
 // Necesario para trabajar con formularios!!
 app.use(express.urlencoded({ extended: false }));

@@ -49,5 +49,14 @@
   "password": "asdasd",
   "image": "default-image.png",
   "id": 8
+ },
+ {
+  "firstName": "Franco",
+  "lastName": "Tomaino",
+  "email": "natanaeltomaino@hotmail.com",
+  "date": "2020-12-12",
+  "password": "$2a$10$3dAU27eFnEyMJ0SgkkFxXOy.uSBVZXxa/2wSb775oDwSg8Dwjx5E6",
+  "image": "default-image.png",
+  "id": 9
  }
 ]

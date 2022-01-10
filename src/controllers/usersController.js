@@ -1,6 +1,6 @@
 const jsonDb = require('../model/jsonDatabase')
 const usersModel = jsonDb('users')
-
+const bcryptjs = require('bcryptjs')
 
 const usersController = {
     login:(req,res)=>{
@@ -12,6 +12,10 @@ const usersController = {
     create: (req,res)=>{
         let row = req.body
         
+
+        row.password = bcryptjs.hashSync(req.body.password,10)
+
+
         if(req.file){
             row.image = req.file.filename
         }else{
