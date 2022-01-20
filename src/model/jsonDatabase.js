@@ -103,11 +103,18 @@ const modelController = function (name) {
             console.log(enVenta)
             return enVenta
 
-        }
+        },
+
+        //Con este metodo permito que se busque por cualquier campo
+    findByField: function (field, text) {
+        //En una variable local voy a traer a todos mis usuarios que se encuentran en la DB
+        let allUsers = this.all()
+        let userFound = allUsers.find(oneUser => oneUser[field]===text)
+        return userFound;
+    }
+      
 
        
-
-
 
     }
 }

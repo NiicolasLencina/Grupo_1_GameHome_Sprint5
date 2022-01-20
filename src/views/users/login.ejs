@@ -32,17 +32,15 @@
             </div>
             <div class="register">
                 <h2>Iniciar sesión</h2>
-                <form action="POST" id="form">
-                    <input type="text" name="nombre" class="nombre" placeholder="Nombre de usuario o correo" required>
+                <form action="/usuario/login" method="POST">
 
-                    
-
-                    <input type="password" name="contraseña" class="contraseña" placeholder="Contraseña" required>
-
-                    
+                    <input type="email" name="email" class="nombre" placeholder="Ingresá tu email" required>
 
 
-                    <input type="submit" class="submit" value="INICIAR SESION">
+                    <input type="password" name="password" class="contrasenia" placeholder="Contraseña" required>
+
+
+                    <button type="submit" class="submit">INICIAR SESIÓN</button>
 
 
 
