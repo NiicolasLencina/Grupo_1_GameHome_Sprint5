@@ -50,10 +50,9 @@ const usersController = {
 
             if(userEncontrado && bcryptjs.compareSync(req.body.password,userEncontrado.password)==true){
 
-                    req.session.email=userEncontrado.email;
-                    req.session.firstName=userEncontrado.firstName;
-                    req.session.id=userEncontrado.id;
-                    req.session.image=userEncontrado.image;
+                   
+
+                req.session.user=userEncontrado
 
                 console.log(req.session.email)
 
@@ -72,29 +71,40 @@ const usersController = {
         else{
             res.render('users/login',{errors:errors.mapped(),old:req.body});
         }
-       /* let userToLogin;
-        let usersAll = usersModel.all()
-        for(let i=0; i<usersAll.length; i++){
-            if(usersAll[i].email == req.body.email){
-                userToLogin=usersAll[i];
+      
+    },
+    profile:function (req,res) {
+        res.render('users/userProfile',{user:req.session.user})
+    },
+    edit:function (req,res) {
+        /*
+        let row = req.body
         
-            }
+        if(req.body.password != null){
+            row.password = bcryptjs.hashSync(req.body.password,10)
         }
-        if(userToLogin){
+        else{
+            let usuarioEnBD = usersModel.find(req.params.id)
             
-            if(bcryptjs.compareSync(req.body.password,userToLogin.password)==true){
-                delete userToLogin.password;
-                req.session.user= userToLogin;
-                //if(req.body.recordar){
-              //  res.cookie('userEmail',req.body.mail,{maxAge:(1000*60)*2})
-            //}
-                    console.log(req.session.email);
-                     res.send('1'); 
-               }
-                res.send('2so')
+            row.password=usuarioEnBD.password
+        }
 
-    }
-       */
+        console.log(req.file);
+        if(req.file!=undefined){
+            row.image = req.file.filename
+        }
+        else if(req.file==undefined){
+            let objeto = usersModel.find(req.params.id)
+            row.image = objeto.image
+        }
+
+        console.log(req.body);
+
+        usersModel.update(row) 
+
+        req.session.userUpdate=row
+
+        res.redirect('/usuario/perfil',{user:req.session.userUpdate})*/
     }
 
 }

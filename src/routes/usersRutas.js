@@ -11,9 +11,16 @@ let validation = require('../middleware/errorsValidation');
 let usersController= require('../controllers/usersController');
 
 
-router.get('/login', usersController.login);
+//Require middlewares de autentificacion
+let ifuserLogged = require('../middleware/ifuserLogged')
+let auth = require('../middleware/auth')
+
+router.get('/login',ifuserLogged, usersController.login);
 router.post('/login', validation, usersController.loginProcess);
-router.get('/registro', usersController.register);
+router.get('/registro',ifuserLogged, usersController.register);
 router.post('/registro',upload.single('avatar'),usersController.create);
+router.get('/perfil',auth,usersController.profile)
+router.put('/editar/:id',upload.single('image'),usersController.edit)
+
 
 module.exports= router;

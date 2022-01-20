@@ -52,5 +52,15 @@
   "password": "$2a$10$bd80Jb3shCrAAghSfJ08mOJPoopn6uZKQ2YX2hRn2TYfv83ev.fV.",
   "image": "default-image.png",
   "id": 6
+ },
+ {
+  "name": "Franco",
+  "last_name": "Tomaino",
+  "email": "natanaeltomaino@hotmail.com",
+  "date": "2020-12-12",
+  "password": "$2a$10$C/T9NNMWqDUH6006mHkpJuOeYd1gOHdl1Aa9m/YBLjKqZfrZGVidi",
+  "id": 7,
+  "image": "avatar-1642721892621.jpeg"
  }
+
 ]
