@@ -32,6 +32,8 @@ const usersController = {
     },
     loginProcess:(req,res)=>{
         const errors = validationResult(req)
+
+        
         if(errors.isEmpty()){
             let userAll = usersModel.readFile()
 
@@ -61,6 +63,9 @@ const usersController = {
                     
                     return res.redirect('/')
                 
+            }
+            else{
+                res.render('users/login');
             }
 
         }

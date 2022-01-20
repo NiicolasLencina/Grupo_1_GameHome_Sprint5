@@ -25,5 +25,32 @@
   "password": "$2a$10$vyc.JZT8bAA2YM/4xJhp0.xo0vpyw9Amqsj5n5FIfr9SQsUCN0Wpq",
   "image": "default-image.png",
   "id": 3
+ },
+ {
+  "firstName": "Franco",
+  "lastName": "Tomaino",
+  "email": "natanaeltomaino@hotmail.com",
+  "date": "2020-12-12",
+  "password": "$2a$10$cqtpadt1h530EVJxsPayP.Z5n1eSkwBABZSF2sxBgHMqqPpmUpLEu",
+  "image": "default-image.png",
+  "id": 4
+ },
+ {
+  "firstName": "d",
+  "lastName": "d",
+  "email": "tomainofranco5@gmail.com",
+  "date": "2020-12-12",
+  "password": "$2a$10$S5js.7IELHTvVoTAV1ZumemyZqIlCHknVYt8C3OIVRhTN.A369VuW",
+  "image": "default-image.png",
+  "id": 5
+ },
+ {
+  "firstName": "franco",
+  "lastName": "r",
+  "email": "natanaeltomaino@hotmail.com",
+  "date": "2020-12-12",
+  "password": "$2a$10$bd80Jb3shCrAAghSfJ08mOJPoopn6uZKQ2YX2hRn2TYfv83ev.fV.",
+  "image": "default-image.png",
+  "id": 6
  }
 ]
