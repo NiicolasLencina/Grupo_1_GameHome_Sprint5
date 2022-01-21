@@ -63,6 +63,22 @@
 .register input:focus{
     outline: none;
 }
+.recordarLogin{
+    display: flex;   
+    font-size: 12px;
+    color:#333;
+    width: 90%;
+    
+}
+.recordarLogin input{
+    margin-right: 155px;
+
+}
+.recordarLogin label{
+    left: 100px;
+
+
+}
 
 .register .submit{
     width: 100%;

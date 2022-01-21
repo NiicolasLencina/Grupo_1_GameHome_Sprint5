@@ -61,6 +61,14 @@
   "password": "$2a$10$C/T9NNMWqDUH6006mHkpJuOeYd1gOHdl1Aa9m/YBLjKqZfrZGVidi",
   "id": 7,
   "image": "avatar-1642721892621.jpeg"
+ },
+ {
+  "firstName": "Flor",
+  "lastName": "Farias",
+  "email": "res@res.com",
+  "date": "2020-12-12",
+  "password": "$2a$10$sq.sCatkIl1p1j2LynnrN.PfoEPaGSLShHI5cGxjujCA/RDxDaAUW",
+  "image": "default-image.png",
+  "id": 8
  }
-
 ]

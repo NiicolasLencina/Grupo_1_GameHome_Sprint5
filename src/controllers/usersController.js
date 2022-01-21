@@ -56,9 +56,9 @@ const usersController = {
 
                 console.log(req.session.email)
 
-                   /* if(req.body.recordar){
+                    if(req.body.recordar){
                         res.cookie('userEmail',req.body.email,{maxAge:(1000*60)*2})
-                    }*/
+                    }
                     
                     return res.redirect('/')
                 
