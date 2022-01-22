@@ -546,7 +546,51 @@ footer .seccion2{
         border: #87f234 solid 1px;   
         box-shadow: 1px 1px 1px #faeb52;
     }
-
+    .menu-escondido{
+        background-color:  rgb(102, 102, 102);
+        z-index: 3;
+        height: 59px;
+        position: absolute;
+        width: 14.9%;
+        right: 100px;
+        top: 109px;
+        padding: 1px;
+        display: none;
+        
+        
+        
+    }
+    .menu-escondido .p-perfil{
+        border-bottom: solid 1px white;
+        
+    }
+    .menu-escondido p{
+       
+        padding: 5px 5px 5px 10px;
+        
+        
+    }
+    .menu-escondido  a{
+        text-decoration: none;
+        color:white;
+        transition: all 0.3s;
+    }
+    .menu-escondido a:hover{
+        opacity: 0.6;
+    }
+    .datosImg:hover{
+        cursor: pointer;
+        
+    }
+    .datosImg:hover i{
+       opacity: 0.7;
+       transition: all 0.5s ease-in;
+    }
+    
+    .datosImg:hover .menu-escondido{
+        display: block;
+        transition: all 1s;
+    }
    .barra2 i{
 
         font-size: 15px;

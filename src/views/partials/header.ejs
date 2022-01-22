@@ -60,7 +60,10 @@
             <p>¡Hola, <%= user.firstName %>! </p>
           <img src="/images/users/<%= user.image %>">
           <i class="fas fa-chevron-down"></i>
-          
+          <div class="menu-escondido">
+            <p class="p-perfil"><a href="/usuario/perfil">Mi perfil</a></p>
+            <p><a href="/usuario/logout">Salir</a></p>
+          </div>
           </div>
         <% } %>
         <div class="iconos">
