@@ -6,22 +6,42 @@ const productModel = jsonDb('products')
 const productController = {
     index: (req,res)=>{
 
+        if(req.session.user){
+            let products = productModel.all()
+            res.render('products/index',{user:req.session.user,products})
+        }
             let products = productModel.all()
         res.render('products/index',{products})
     },
     all: (req,res)=>{
     
+        if(req.session.user){
+            let products = productModel.all()
+            res.render('products/products',{user:req.session.user,products})
+        }
+
         let products = productModel.all()
         res.render('products/products',{products})
     
 },
     edit: (req,res)=>{
+
+        if(req.session.user){
+            let id=req.params.id;
+            let producto= productModel.find(id)
+           
+            res.render('products/editProduct',{user:req.session.user,producto})
+        }
        let id=req.params.id;
        let producto= productModel.find(id)
 
         res.render('products/editProduct',{producto});
     },
     add: (req,res)=>{
+
+        if(req.session.user){
+            res.render('products/productAdd',{user:req.session.user})
+        }
         res.render('products/productAdd');
 
     },
@@ -43,6 +63,13 @@ const productController = {
 
     detail: function (req,res) {
 
+        if(req.session.user){
+            let id = req.params.id
+
+            let producto = productModel.find(id)
+            let products = productModel.all()
+            res.render('products/productDetail',{user:req.session.user,producto,products})
+        }
         let id = req.params.id
 
         let producto = productModel.find(id)
@@ -50,6 +77,10 @@ const productController = {
         res.render('products/productDetail',{producto,products})
     },
     cart: (req,res)=>{
+
+        if(req.session.user){
+            res.render('products/productCart',{user:req.session.user})
+        }
         res.render('products/productCart')
     },
     // Update - Method to update

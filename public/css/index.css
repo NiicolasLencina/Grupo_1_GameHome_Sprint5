@@ -463,7 +463,23 @@ footer .seccion2{
     .barra1 .carrito i{
         display: none;
     }
+    .datosImg{
+        margin-right:-120px;
+        display: flex;
+        
+        align-items: center;
+        justify-content: space-between;
+        width: 15%;
+      
 
+        }
+    .datosImg img{
+        width: 55px;
+        height:55px;
+        border-radius:50%;
+        border: #87f234 solid 1px;   
+        box-shadow: 1px 1px 1px #faeb52;
+    }
 
    .barra2 i{
 

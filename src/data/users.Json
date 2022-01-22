@@ -70,5 +70,14 @@
   "password": "$2a$10$sq.sCatkIl1p1j2LynnrN.PfoEPaGSLShHI5cGxjujCA/RDxDaAUW",
   "image": "default-image.png",
   "id": 8
+ },
+ {
+  "firstName": "eze",
+  "lastName": "pp",
+  "email": "ee@ss",
+  "date": "2020-12-12",
+  "password": "$2a$10$ofzdDN74w51525UOxbv9l.QH/o/cBXLCKPAoQgdgXwYukGeGCceSW",
+  "image": "avatar-1642806228477.png",
+  "id": 9
  }
 ]

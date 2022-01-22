@@ -5,9 +5,17 @@ const bcryptjs = require('bcryptjs');
 
 const usersController = {
     login:(req,res)=>{
+        if(req.session.user){
+            res.render('users/login',{user:req.session.user})
+        }
         res.render('users/login')
     },
     register: (req,res)=>{
+
+        if(req.session.user){
+            res.render('users/register',{user:req.session.user})
+        }
+
         res.render('users/register')
     },
     create: (req,res)=>{
