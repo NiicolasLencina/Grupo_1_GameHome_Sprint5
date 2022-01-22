@@ -1,6 +1,6 @@
 function userLogged(req,res,next) {
     if(req.session.user){
-        res.redirect('/')
+        res.redirect('/usuario/perfil')
     }
     next()
 }

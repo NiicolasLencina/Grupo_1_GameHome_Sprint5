@@ -15,12 +15,24 @@ let usersController= require('../controllers/usersController');
 let ifUserLogged = require('../middleware/ifuserLogged')
 let auth = require('../middleware/auth')
 
+
+//Login
 router.get('/login',ifUserLogged, usersController.login);
+
+//Procesamiento de formulario de loggeo
 router.post('/login', validation, usersController.loginProcess);
+//Logout
+router.get('/logout', usersController.logout)
+//Register
 router.get('/registro',ifUserLogged, usersController.register);
+
 router.post('/registro',upload.single('avatar'),usersController.create);
+
+//Perfil de usuario
 router.get('/perfil',auth,usersController.profile)
-router.put('/editar/:id',upload.single('image'),usersController.edit)
+
+//Edición de perfil
+//router.put('/editar/:id',upload.single('image'),usersController.edit)
 
 
 module.exports= router;

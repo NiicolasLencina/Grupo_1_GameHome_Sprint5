@@ -84,37 +84,13 @@ const usersController = {
     profile:function (req,res) {
         res.render('users/userProfile',{user:req.session.user})
     },
-    edit:function (req,res) {
-        /*
-        let row = req.body
-        
-        if(req.body.password != null){
-            row.password = bcryptjs.hashSync(req.body.password,10)
-        }
-        else{
-            let usuarioEnBD = usersModel.find(req.params.id)
-            
-            row.password=usuarioEnBD.password
-        }
-
-        console.log(req.file);
-        if(req.file!=undefined){
-            row.image = req.file.filename
-        }
-        else if(req.file==undefined){
-            let objeto = usersModel.find(req.params.id)
-            row.image = objeto.image
-        }
-
-        console.log(req.body);
-
-        usersModel.update(row) 
-
-        req.session.userUpdate=row
-
-        res.redirect('/usuario/perfil',{user:req.session.userUpdate})*/
-    }
-
+    //Borra lo que esté en session
+	logout:(req,res) =>{
+		req.session.destroy();
+        res.clearCookie('userEmail')
+		return res.redirect('/');
+	}
+	
 }
 
 module.exports=usersController;

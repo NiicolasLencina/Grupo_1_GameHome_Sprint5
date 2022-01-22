@@ -39,14 +39,7 @@ body{
 
 }
 
-.burger-menu i{
-    position: absolute;
-    font-size: 25px;
-    border-radius: 4px;
-    right: 1px;
-    margin: auto;
-    padding: 10px;
-}
+
 /*carrito*/
 
 .barra1 .carrito i{
@@ -58,6 +51,79 @@ body{
     padding: 10px;
     color:#FFF;
 }
+
+/*Menù lateral*/
+#btn-menu{
+    display: none;
+}
+
+/*burguer menu*/
+.btn-menu{
+    position: absolute;
+    font-size: 23px;
+    right: 2%;
+    margin-top: 6px;
+}
+
+.container-menu{
+    position: absolute;
+    background: rgba(18, 1, 49, 0.568);
+    width: 100%;
+    height: 100vh;
+    top: 0%;
+    
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Para el contenedor del buruger menu*/
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #28164d;
+    opacity: 1;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(10%);
+    z-index: 1;
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(45%);
+}
+
+/*Para las fuentes*/
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #e7dddd;
+    border-bottom:1px solid white ;
+    border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-right: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+	color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
 
 
 .barra1 .barra-busqueda{
