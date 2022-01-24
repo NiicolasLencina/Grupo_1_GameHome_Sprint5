@@ -114,9 +114,7 @@ body{
     visibility: hidden;
     
 }
-#btn-menu:checked ~  .cont-menu{
-    /*transform: translateX(50px);*/
-}
+
 .cont-menu nav{
     transform: translateY(45%);
 }
