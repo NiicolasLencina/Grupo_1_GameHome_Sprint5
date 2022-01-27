@@ -1,4 +1,4 @@
 Usuario de prueba
 
-email: correo@correo.com
-password: 12345
+email: admin@gamehome.com
+password: AdminGame2021
