@@ -97,5 +97,14 @@
   "password": "$2a$10$G9GXcjSR1etZQgODic6LaOkkV9YpXNl.uSyxk2aJ7dxu4Qlx1csHu",
   "image": "avatar-1643030995837.PNG",
   "id": 11
+ },
+ {
+  "firstName": "Admin",
+  "lastName": "Admin",
+  "email": "admin@gamehome.com",
+  "date": "2020-12-12",
+  "password": "$2a$10$7fTCIvSee0nB3g6ZUQlYNOrCezSyXMxdJA8zMv0lR2/SQE5iOSaEW",
+  "image": "avatar-1643569988061.jpg",
+  "id": 12
  }
 ]
