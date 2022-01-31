@@ -34,10 +34,15 @@
                 <h2>Iniciar sesión</h2>
                 <form action="/usuario/login" method="POST">
 
-                    <input type="email" name="email" class="nombre" placeholder="Ingresá tu email" required>
+                    <input type="email" name="email" class="nombre" placeholder="Ingresá tu email" >
+                    <% if (locals.errors && errors.email) { %>
+                        <p class="feedback" style="color: red;font-size: 14px;"><%= errors.email.msg %>  </p>
+                    <% } %>
 
-
-                    <input type="password" name="password" class="contrasenia" placeholder="Contraseña" required>
+                    <input type="password" name="password" class="contrasenia" placeholder="Contraseña" >
+                    <% if (locals.errors && errors.password) { %>
+                        <p class="feedback" style="color: red;font-size: 14px;"><%= errors.password.msg %>  </p>
+                    <% } %>
 
                     <div class="recordarLogin">
                         <label for="recordar">Recordar usuario<input type="checkbox" name="recordarLogin"></label>

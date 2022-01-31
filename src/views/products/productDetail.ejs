@@ -31,7 +31,7 @@
                     <button type="submit" name="" id="" value="Sumar al carrito" class="agregar-boton">Agregar al carrito</button>
                 </form>
                     
-            
+                <% if (typeof user !='undefined') {%>
                     <form action="/products/<%=producto.id%>/edit" method="get">
                         <button type="submit" name="" id="" class="editar-boton">Edición de producto</button>
                      </form>
@@ -39,7 +39,7 @@
                      <form action="/products/delete/<%=producto.id%>?_method=delete" method="POST">
                         <button type="submit" class="eliminar-boton">ELIMINAR</button>
                     </form>
-                
+                    <% }%>
             </article>
         </section>
 
@@ -53,9 +53,7 @@
                   <li class="color2">Precio : <%= producto.price%></li>
                     <li class="color1">Categoria :<%= producto.category%> </li>
                     <li class="color2">Categoria :<%= producto.description%> </li>
-                   <!--<li class="color2">Con microfono : Si</li>
-                    <li class="color1">Tipo de audio : Virtual</li>
-                    <li class="color2">Tipo : Headset</li>--> 
+                   
                 </ul>
 
                 

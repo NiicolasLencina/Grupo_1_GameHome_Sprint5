@@ -19,6 +19,9 @@ const usersController = {
         res.render('users/register')
     },
     create: (req,res)=>{
+        const errors = validationResult(req)
+
+        if(errors.isEmpty()){
         let row = req.body
         
 
@@ -37,6 +40,9 @@ const usersController = {
         usersModel.create(row) 
 
         res.redirect('login')
+    }else{
+            res.render('users/register',{errors:errors.mapped(),old:req.body});
+        }
     },
     loginProcess:(req,res)=>{
         const errors = validationResult(req)
