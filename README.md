@@ -52,8 +52,3 @@ tengo 21 años. Una de las cosas  que más  me gusta de la programación es: pre
 
 ### Trello : https://trello.com/b/SbGKz092/proyecto-dh ⬅️
 
-###Usuario de prueba
-
-email: admin@gamehome.com
-password: AdminGame2021
-
